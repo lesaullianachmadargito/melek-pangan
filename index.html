@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><title>Lampiran Bukti — MELEK PANGAN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lampiran bukti dan perangkat kerja program MELEK PANGAN, Dusun Sompok, Kalurahan Sriharjo, Imogiri, Bantul. Diajukan pada PLN SustainAction 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Montserrat", system-ui, sans-serif; color: #10241B; font-size: 8.8pt; line-height: 1.4; background: #fff; }
+
+  @media screen {
+    body { background: #E9EFEB; padding: 18px 0 40px; }
+    .page { margin: 0 auto 18px; background: #fff; box-shadow: 0 8px 28px rgba(15,61,46,.14); }
+    .bar { position: sticky; top: 0; z-index: 9; background: #0F3D2E; color: #fff; padding: 14px 20px; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+    .bar b { font-size: 1rem; font-weight: 800; }
+    .bar span { font-size: .82rem; color: #BFE3CE; font-weight: 600; }
+    .bar a { color: #0F3D2E; background: #F2B705; text-decoration: none; font-weight: 800; font-size: .82rem; padding: 9px 16px; border-radius: 99px; }
+    .bar a.putih { background: #fff; }
+  }
+  @media screen and (max-width: 980px) { .page { zoom: .52; } .bar { zoom: 1; } }
+  @media print { .bar { display: none; } }
+  .page { width: 238.6mm; min-height: 336mm; padding: 14.8mm 14.8mm 12.5mm; zoom: 0.88; page-break-after: always; position: relative; display: flex; flex-direction: column; }
+  .page:last-child { page-break-after: auto; }
+  .kop { display: grid; grid-template-columns: 1fr auto; gap: 6mm; align-items: start; border-bottom: 2.5px solid #1B6B45; padding-bottom: 3mm; margin-bottom: 5mm; }
+  .kop .no { font-size: 7.4pt; font-weight: 800; color: #1B6B45; letter-spacing: normal; }
+  .kop h2 { font-size: 13pt; font-weight: 800; color: #0F3D2E; margin-top: 1mm; }
+  .kop p { font-size: 8pt; color: #34483E; font-weight: 600; margin-top: 1mm; }
+  .tandai { font-size: 7.4pt; font-weight: 800; padding: 1.6mm 3.5mm; border-radius: 99px; white-space: nowrap; }
+  .siap { background: #DDF2E5; color: #0F3D2E; }
+  .kosong { background: #FFF7DB; color: #8A5B00; border: 1px solid #E8C566; }
+  table { width: 100%; border-collapse: collapse; font-size: 8pt; }
+  th { background: #1B6B45; color: #fff; font-weight: 700; text-align: left; padding: 1.4mm 2.2mm; font-size: 7.6pt; border: 1px solid #1B6B45; }
+  td { border: 1px solid #C9DBD1; padding: 1.4mm 2.2mm; vertical-align: top; }
+  tr:nth-child(even) td { background: #F7FAF8; }
+  td.c { text-align: center; } td.b { font-weight: 700; color: #0F3D2E; }
+  .isi { height: 6mm; }
+  h3 { font-size: 9.6pt; font-weight: 800; color: #0F3D2E; margin: 4mm 0 2mm; padding-left: 2.5mm; border-left: 3.5px solid #F2B705; }
+  .note { background: #F2F8F4; border-left: 3.5px solid #23874F; padding: 2.6mm 3.5mm; font-size: 7.8pt; margin-top: 3mm; color: #1E3128; }
+  .note b { color: #0F3D2E; }
+  .garis { border-bottom: 1px solid #10241B; display: inline-block; min-width: 55mm; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .ttd { margin-top: auto; padding-top: 6mm; display: grid; grid-template-columns: 1fr 1fr; gap: 10mm; font-size: 8pt; }
+  .ttd div { text-align: center; }
+  .ttd .g { margin-top: 15mm; border-top: 1px solid #10241B; padding-top: 1.5mm; font-weight: 700; }
+  footer { margin-top: auto; padding-top: 3mm; border-top: 1px solid #DCE7E1; font-size: 7pt; color: #34483E; display: flex; justify-content: space-between; font-weight: 600; }
+  .tinggi td { height: 11mm; }
+  .gantt td.m { padding: 0; height: 5.2mm; }
+  .gantt .on { background: #2E9E5B; }
+  .gantt .on2 { background: #F2B705; }
+  .lead { font-size: 8.6pt; color: #1E3128; }
+  ul { margin-left: 4.5mm; } li { margin-bottom: 1.2mm; }
+  .cover h1 { font-size: 22pt; font-weight: 800; color: #0F3D2E; line-height: 1.15; }
+  .cover .sub { font-size: 10pt; color: #34483E; font-weight: 600; margin-top: 3mm; }
+  .isi-list { margin-top: 7mm; }
+  .isi-list div { display: grid; grid-template-columns: 9mm 1fr auto; gap: 3mm; padding: 2.2mm 0; border-bottom: 1px dotted #C9DBD1; font-size: 8.6pt; }
+  .isi-list b { color: #1B6B45; }
+  .kecil { font-size: 7.6pt; color: #34483E; font-weight: 600; }
+</style></head>
+<body>
+<div class="bar">
+  <div><b>Lampiran Bukti dan Perangkat Kerja — MELEK PANGAN</b><br>
+  <span>Kelompok Tani Taruna Tani “Hijaunya Cinta” · Dusun Sompok, Sriharjo, Imogiri, Bantul · PLN SustainAction 2026</span></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <a href="Lampiran-Bukti-MELEK-PANGAN.pdf">Unduh lampiran (PDF)</a>
+    <a class="putih" href="Proposal-dan-Lampiran-MELEK-PANGAN.pdf">Proposal lengkap (PDF)</a>
+  </div>
+</div>
+
+<!-- ===================== 1 SAMPUL ===================== -->
+<div class="page cover">
+  <div style="border-bottom:3px solid #1B6B45;padding-bottom:5mm">
+    <div class="kecil" style="font-weight:800;color:#1B6B45">PLN SUSTAINACTION 2026 &middot; LAMPIRAN PROPOSAL</div>
+    <h1 style="margin-top:3mm">Lampiran Bukti dan Perangkat Kerja</h1>
+    <div class="sub">MELEK PANGAN &mdash; Greenhouse Pemuda yang Dialiri Listrik dan Diukur Hasilnya<br>
+    Kelompok Tani Taruna Tani &ldquo;Hijaunya Cinta&rdquo; &middot; Dusun Sompok, Kalurahan Sriharjo, Kapanewon Imogiri, Kabupaten Bantul, DIY</div>
+  </div>
+
+  <div class="note" style="margin-top:6mm">
+    <b>Cara membaca lampiran ini.</b> Dokumen bertanda <span class="tandai siap">RENCANA TIM</span> sudah berisi dan
+    merupakan hasil kerja perencanaan kami. Dokumen bertanda <span class="tandai kosong">FORMULIR KOSONG</span> adalah
+    perangkat yang sudah kami siapkan tetapi sengaja belum diisi, karena datanya baru ada setelah diukur di lapangan.
+    <b>Tidak ada satu pun angka hasil yang kami isi sebelum pengukuran dilakukan.</b> Justru itulah cara kerja yang kami tawarkan.
+  </div>
+
+  <div class="isi-list">
+    <div><b>1</b><span>Sampul dan daftar isi lampiran</span><span class="kecil">&mdash;</span></div>
+    <div><b>2</b><span>Jadwal pelaksanaan sembilan bulan</span><span class="kecil">Rencana tim</span></div>
+    <div><b>3</b><span>Daftar pemangku kepentingan, peran, dan manfaat</span><span class="kecil">Rencana tim</span></div>
+    <div><b>4</b><span>Daftar risiko dan langkah pencegahannya</span><span class="kecil">Rencana tim</span></div>
+    <div><b>5</b><span>Formulir pencatatan kondisi awal (empat minggu)</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>6</b><span>Buku catatan harian pengelola</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>7</b><span>Buku panen dan penjualan</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>8</b><span>Papan data bulanan yang dipasang di lokasi</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>9</b><span>Kerangka laporan pembuktian bulan ke-9</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>10</b><span>Daftar usulan warga, keputusan, dan alasannya</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>11</b><span>Daftar hadir musyawarah dan pelatihan</span><span class="kecil">Formulir kosong</span></div>
+    <div><b>12</b><span>Kesepakatan pengelola dan kas perawatan</span><span class="kecil">Naskah kesepakatan</span></div>
+    <div><b>13</b><span>Jadwal perawatan alat dan contoh panduan operasi</span><span class="kecil">Rencana tim</span></div>
+    <div><b>14</b><span>Rencana pengembangan satu dan tiga tahun</span><span class="kecil">Rencana tim</span></div>
+    <div><b>15</b><span>Contoh surat kesediaan kelompok dan surat dukungan kalurahan</span><span class="kecil">Naskah untuk ditandatangani</span></div>
+  </div>
+
+  <div class="note" style="margin-top:6mm">
+    <b>Bukti lain yang menyertai berkas ini:</b> dokumen struktur organisasi (berkas terpisah), Rencana Anggaran Biaya
+    (berkas terpisah), foto kedua greenhouse dan kegiatan budidaya, serta dokumentasi program kami sebelumnya di
+    Wonokerto, Sleman, penerima PLN SustainAction 2025.
+  </div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN &middot; PLN SustainAction 2026</span><span>Halaman 1</span></footer>
+</div>
+
+<!-- ===================== 2 JADWAL ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 2</div><h2>Jadwal pelaksanaan sembilan bulan</h2>
+      <p>Lima tahap yang urutannya tidak dibolak-balik. Kondisi awal diukur sebelum satu alat pun dipasang.</p></div>
+    <span class="tandai siap">RENCANA TIM</span>
+  </div>
+
+  <table class="gantt">
+    <tr><th style="width:52mm">Kegiatan</th><th style="width:26mm">Penanggung jawab</th>
+      <th class="c">B1</th><th class="c">B2</th><th class="c">B3</th><th class="c">B4</th><th class="c">B5</th>
+      <th class="c">B6</th><th class="c">B7</th><th class="c">B8</th><th class="c">B9</th></tr>
+
+    <tr><td class="b" colspan="11" style="background:#DDF2E5;color:#0F3D2E">Tahap 1 &middot; Musyawarah dan pencatatan kondisi awal</td></tr>
+    <tr><td>Musyawarah penetapan sasaran dan batas gagal</td><td>Koordinator lapangan</td>
+      <td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Pencatatan kondisi awal empat minggu</td><td>Pencatat kelompok</td>
+      <td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Penetapan pengelola dan pengganti</td><td>Ketua kelompok</td>
+      <td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+
+    <tr><td class="b" colspan="11" style="background:#DDF2E5;color:#0F3D2E">Tahap 2 &middot; Perancangan dan penghitungan biaya</td></tr>
+    <tr><td>Gambar instalasi listrik dan jaringan irigasi</td><td>Koord. teknologi</td>
+      <td class="m on"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Survei dan pengajuan penambahan daya ke PLN</td><td>Koord. teknologi</td>
+      <td class="m"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Survei harga dan penetapan belanja</td><td>Koord. keuangan</td>
+      <td class="m"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+
+    <tr><td class="b" colspan="11" style="background:#DDF2E5;color:#0F3D2E">Tahap 3 &middot; Pemasangan bersama kelompok</td></tr>
+    <tr><td>Perbaikan fisik greenhouse dan ventilasi</td><td>Koordinator lapangan</td>
+      <td class="m"></td><td class="m on"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Instalasi listrik oleh tenaga bersertifikat</td><td>Koord. teknologi</td>
+      <td class="m"></td><td class="m"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Pemasangan pompa, tandon, dan jaringan irigasi</td><td>Koordinator lapangan</td>
+      <td class="m"></td><td class="m"></td><td class="m on"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Pemasangan kipas exhaust dan sirkulasi</td><td>Koord. teknologi</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+
+    <tr><td class="b" colspan="11" style="background:#DDF2E5;color:#0F3D2E">Tahap 4 &middot; Alat ukur dan pelatihan</td></tr>
+    <tr><td>Pemasangan node sensor dan papan data</td><td>Koord. teknologi</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Pelatihan pengelola empat hari</td><td>Koord. pelatihan</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td></tr>
+    <tr><td>Pendampingan pencatatan harian</td><td>Pencatat dan pengganti</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td></tr>
+
+    <tr><td class="b" colspan="11" style="background:#DDF2E5;color:#0F3D2E">Tahap 5 &middot; Pembuktian dan pelaporan</td></tr>
+    <tr><td>Produksi rutin dan penimbangan panen</td><td>PJ produksi</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td></tr>
+    <tr><td>Evaluasi bulanan terbuka dan papan data</td><td>Ketua kelompok</td>
+      <td class="m"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td><td class="m on2"></td></tr>
+    <tr><td>Survei umpan balik anggota dan keluarga</td><td>Koord. pelatihan</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td></tr>
+    <tr><td>Penyusunan laporan pembuktian</td><td>Ketua tim</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td><td class="m on"></td></tr>
+    <tr><td>Serah terima kepada kelompok</td><td>Ketua tim</td>
+      <td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m on"></td></tr>
+  </table>
+
+  <div class="note"><b>Keterangan:</b> kotak hijau = kegiatan utama, kotak kuning = kegiatan yang berjalan terus.
+  Setelah bulan ke-9, tim tetap melakukan kunjungan tiga bulanan selama satu tahun untuk memastikan pencatatan berjalan.
+  Ukuran keberhasilan akhir: kedua greenhouse masih beroperasi dan masih dicatat 12 bulan setelah serah terima.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 2</span></footer>
+</div>
+
+<!-- ===================== 3 PEMANGKU KEPENTINGAN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 3</div><h2>Daftar pemangku kepentingan, peran, dan manfaat</h2>
+      <p>Dipetakan sebelum program dimulai, dan diperbarui setiap evaluasi besar.</p></div>
+    <span class="tandai siap">RENCANA TIM</span>
+  </div>
+
+  <table>
+    <tr><th style="width:42mm">Pihak</th><th style="width:36mm">Kebutuhan mereka</th><th>Peran dalam program</th><th style="width:40mm">Manfaat yang diterima</th></tr>
+    <tr><td class="b">Kelompok Tani Taruna Tani &ldquo;Hijaunya Cinta&rdquo; (28 pemuda, 17&ndash;35 th)</td><td>Penghasilan yang tidak bergantung musim</td><td>Pemilik dan pengelola harian: tanam, rawat, panen, catat, rawat alat</td><td>Panen lebih teratur, keterampilan bertani terkendali</td></tr>
+    <tr><td class="b">Ibu-ibu dan keluarga anggota</td><td>Penghasilan tambahan yang bisa dikerjakan di sela pekerjaan rumah</td><td>Penyemaian, penyortiran, pengemasan; dua kursi di tim pengelola inti</td><td>Upah per satuan hasil, akses sayur segar</td></tr>
+    <tr><td class="b">Warga lanjut usia</td><td>Pekerjaan ringan yang terjangkau</td><td>Perawatan tanaman, pengamatan harian, pencatatan sederhana</td><td>Upah dan keterlibatan sosial</td></tr>
+    <tr><td class="b">Buruh tani tanpa lahan dan pemuda putus sekolah</td><td>Pekerjaan dan keterampilan</td><td>Pekerjaan berupah saat pemasangan dan panen; pelatihan instalasi</td><td>Upah harian, keterampilan yang bisa dibawa ke tempat lain</td></tr>
+    <tr><td class="b">Pemerintah Kalurahan Sriharjo dan Dukuh Sompok</td><td>Program yang bisa dipertanggungjawabkan dan masuk rencana desa</td><td>Perizinan, mobilisasi warga, tempat musyawarah, dukungan anggaran lanjutan</td><td>Contoh program pertanian yang terdokumentasi</td></tr>
+    <tr><td class="b">PLN UP3 Bantul</td><td>Pelanggan produktif baru dan instalasi yang aman</td><td>Survei dan pelaksanaan penambahan daya, pemeriksaan instalasi</td><td>Beban produktif baru, berkurangnya sambungan darurat</td></tr>
+    <tr><td class="b">Tim TJSL PLN</td><td>Program sosial dengan hasil yang terukur</td><td>Pendanaan, pembinaan, pemantauan</td><td>Bukti dampak yang bisa diperiksa pihak ketiga</td></tr>
+    <tr><td class="b">Tim MELEK PANGAN dan dosen pembimbing UGM</td><td>Penerapan ilmu di lapangan</td><td>Perancangan, pelatihan, protokol pengukuran, penyusunan laporan</td><td>Pembelajaran lapangan dan bahan publikasi</td></tr>
+    <tr><td class="b">Pembeli sayur lokal, warung, dan pasar</td><td>Pasokan yang ajek dan mutu seragam</td><td>Penyerap hasil panen, memberi masukan mutu dan ukuran</td><td>Pasokan lebih pasti, mutu tersortir</td></tr>
+    <tr><td class="b">Kelompok tani dusun tetangga</td><td>Cara memulai yang sudah teruji</td><td>Peserta pelatihan replikasi pada tahun pertama</td><td>Panduan, format catatan, dan tempat belajar</td></tr>
+  </table>
+
+  <div class="note"><b>Cara kami memakai daftar ini.</b> Pada setiap evaluasi besar (bulan ke-4 dan ke-9), daftar ini
+  dibaca ulang bersama kelompok untuk memeriksa satu hal: adakah pihak yang seharusnya merasakan manfaat tetapi
+  kenyataannya tidak. Perubahan yang muncul dari pemeriksaan itu dicatat di Lampiran 10.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 3</span></footer>
+</div>
+
+<!-- ===================== 4 RISIKO ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 4</div><h2>Daftar risiko dan langkah pencegahannya</h2>
+      <p>Diperiksa ulang setiap evaluasi bulanan. Risiko yang benar-benar terjadi dicatat beserta tanggalnya.</p></div>
+    <span class="tandai siap">RENCANA TIM</span>
+  </div>
+
+  <table>
+    <tr><th style="width:8mm">No</th><th style="width:44mm">Risiko</th><th style="width:20mm">Jenis</th><th>Pencegahan dan penanganan</th><th style="width:26mm">Penanggung jawab</th></tr>
+    <tr><td class="c">1</td><td class="b">Gangguan pasokan listrik menghentikan pompa dan pencatatan</td><td>Operasional</td><td>UPS kecil menyangga kendali dan sensor; penambahan daya dan pemeriksaan instalasi dikoordinasikan dengan PLN UP3 Bantul; penyiraman manual disiapkan sebagai cadangan sehari.</td><td>Koord. teknologi</td></tr>
+    <tr><td class="c">2</td><td class="b">Air sungai keruh atau banjir saat musim hujan</td><td>Lingkungan</td><td>Saringan awal dibersihkan mingguan; pompa ditempatkan di atas muka banjir tertinggi yang diingat warga; tandon 1.200 L menjadi cadangan minimal dua hari.</td><td>PJ alat dan listrik</td></tr>
+    <tr><td class="c">3</td><td class="b">Pencatatan berhenti setelah pendampingan selesai</td><td>Operasional</td><td>Dua pencatat dan dua pengganti dilatih; format catatan dibuat satu halaman per minggu; papan data membuat catatan yang kosong langsung terlihat warga.</td><td>Pencatat kelompok</td></tr>
+    <tr><td class="c">4</td><td class="b">Harga sayur jatuh saat panen serentak</td><td>Ekonomi</td><td>Komoditas diseling antar-greenhouse; pembeli dijajaki sejak masa tanam, bukan setelah panen; sebagian hasil dijual tersortir dengan kemasan.</td><td>Ketua kelompok</td></tr>
+    <tr><td class="c">5</td><td class="b">Konflik pembagian hasil dan upah</td><td>Sosial</td><td>Aturan bagi hasil, besaran upah per satuan, dan persentase kas perawatan disepakati tertulis sebelum pemasangan (Lampiran 12) dan dibacakan di musyawarah.</td><td>Ketua kelompok</td></tr>
+    <tr><td class="c">6</td><td class="b">Kecelakaan listrik di bangunan pertanian yang lembap</td><td>Keselamatan</td><td>Pemasangan oleh tenaga bersertifikat, ELCB dan pembumian di dua titik, pemeriksaan ulang sebelum serah terima, larangan sambungan tambahan tanpa izin pengelola.</td><td>Koord. teknologi</td></tr>
+    <tr><td class="c">7</td><td class="b">Serangan hama atau penyakit tanaman</td><td>Teknis</td><td>Kasa serangga pada ventilasi, perangkap, pengamatan harian yang dicatat, dan jeda tanam bila serangan berulang di petak yang sama.</td><td>PJ produksi</td></tr>
+    <tr><td class="c">8</td><td class="b">Anggota kunci merantau atau berhalangan</td><td>Organisasi</td><td>Setiap peran memiliki satu pengganti yang dilatih bersamaan; panduan operasi ditempel di dekat alat sehingga tidak bergantung pada ingatan satu orang.</td><td>Ketua kelompok</td></tr>
+    <tr><td class="c">9</td><td class="b">Alat rusak dan tidak ada biaya perbaikan</td><td>Keuangan</td><td>Kas perawatan disisihkan dari setiap penjualan dan disimpan terpisah; suku cadang dipilih yang dijual di Bantul dan Yogyakarta.</td><td>Bendahara kelompok</td></tr>
+    <tr><td class="c">10</td><td class="b">Hasil ternyata tidak sesuai target</td><td>Program</td><td>Ditulis apa adanya dalam laporan pembuktian beserta penyebab yang ditemukan dan saran perbaikan. Laporan yang jujur dipandang lebih berguna daripada laporan yang semuanya hijau.</td><td>Ketua tim</td></tr>
+  </table>
+
+  <h3>Catatan kejadian risiko (diisi saat terjadi)</h3>
+  <table>
+    <tr><th style="width:22mm">Tanggal</th><th style="width:14mm">No risiko</th><th>Apa yang terjadi</th><th style="width:52mm">Tindakan dan hasilnya</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 4</span></footer>
+</div>
+
+<!-- ===================== 5 KONDISI AWAL ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 5</div><h2>Formulir pencatatan kondisi awal (empat minggu)</h2>
+      <p>Diisi <b>sebelum</b> satu alat pun dipasang. Menjadi pembanding seluruh laporan berikutnya.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <table>
+    <tr><th colspan="4">Identitas pencatatan</th></tr>
+    <tr><td class="b" style="width:38mm">Lokasi</td><td>Dusun Sompok, Kalurahan Sriharjo, Imogiri, Bantul</td><td class="b" style="width:30mm">Mulai dicatat</td><td class="isi" style="width:38mm"></td></tr>
+    <tr><td class="b">Pencatat</td><td class="isi"></td><td class="b">Selesai dicatat</td><td></td></tr>
+    <tr><td class="b">Diketahui</td><td>Ketua kelompok: ______________________</td><td class="b">Dukuh Sompok</td><td></td></tr>
+  </table>
+
+  <h3>Bagian 1 &middot; Keadaan yang dicatat sekali di awal</h3>
+  <table>
+    <tr><th style="width:62mm">Hal yang dicatat</th><th style="width:40mm">Greenhouse 1 (6 &times; 15 m)</th><th style="width:40mm">Greenhouse 2 (8 &times; 12 m)</th><th>Cara mengukur</th></tr>
+    <tr><td class="b">Jumlah lubang tanam yang dipakai</td><td class="isi"></td><td></td><td>hitung langsung</td></tr>
+    <tr><td class="b">Komoditas yang sedang ditanam</td><td class="isi"></td><td></td><td>catat</td></tr>
+    <tr><td class="b">Sumber air dan cara penyiraman saat ini</td><td class="isi"></td><td></td><td>amati dan catat</td></tr>
+    <tr><td class="b">Jumlah kipas yang berfungsi</td><td class="isi"></td><td></td><td>hitung langsung</td></tr>
+    <tr><td class="b">Daya listrik terpasang dan kondisi instalasi</td><td class="isi"></td><td></td><td>lihat meteran dan panel</td></tr>
+    <tr><td class="b">Alat ukur yang dimiliki kelompok</td><td class="isi"></td><td></td><td>catat</td></tr>
+    <tr><td class="b">Catatan tertulis yang sudah ada</td><td class="isi"></td><td></td><td>catat, tulis &ldquo;tidak ada&rdquo; bila memang tidak ada</td></tr>
+  </table>
+
+  <h3>Bagian 2 &middot; Yang dicatat setiap minggu selama empat minggu</h3>
+  <table>
+    <tr><th style="width:62mm">Ukuran</th><th class="c">Minggu 1</th><th class="c">Minggu 2</th><th class="c">Minggu 3</th><th class="c">Minggu 4</th><th class="c" style="width:22mm">Rata-rata</th></tr>
+    <tr><td class="b">Hasil panen (kg)</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Tanaman gagal atau busuk (batang)</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Jam kerja penyiraman (jam)</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Orang yang mengerjakan penyiraman</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Pemakaian listrik (kWh, dari meteran)</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Penjualan (Rp)</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Harga jual per kg (Rp)</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Hari greenhouse tidak terurus</td><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>Bagian 3 &middot; Tiga hal yang disepakati akan dibuktikan</h3>
+  <table>
+    <tr><th style="width:8mm">No</th><th>Yang akan dibuktikan</th><th style="width:34mm">Angka awal</th><th style="width:34mm">Target</th><th style="width:30mm">Kapan diperiksa</th></tr>
+    <tr><td class="c">1</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">2</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">3</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="c b" colspan="2">Program dinyatakan gagal apabila:</td><td class="isi" colspan="3"></td></tr>
+  </table>
+
+  <div class="ttd">
+    <div>Pencatat<div class="g">&nbsp;</div></div>
+    <div>Ketua Kelompok Tani<div class="g">&nbsp;</div></div>
+  </div>
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 5</span></footer>
+</div>
+
+<!-- ===================== 6 CATATAN HARIAN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 6</div><h2>Buku catatan harian pengelola</h2>
+      <p>Satu halaman untuk satu minggu. Ditulis dengan pena, tidak memerlukan telepon pintar.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <table>
+    <tr><td class="b" style="width:28mm">Minggu ke-</td><td style="width:24mm"></td><td class="b" style="width:24mm">Tanggal</td><td style="width:36mm"></td><td class="b" style="width:26mm">Pencatat</td><td></td></tr>
+  </table>
+
+  <table class="tinggi" style="margin-top:3mm">
+    <tr><th style="width:20mm">Hari, tanggal</th><th style="width:22mm">Penyiraman (jam mulai &ndash; selesai)</th><th style="width:20mm">Suhu siang (&deg;C)</th><th style="width:22mm">Kelembapan (%)</th><th style="width:24mm">Pekerjaan hari ini</th><th>Kejadian tidak biasa (hama, mati listrik, alat rusak, tamu)</th></tr>
+    <tr><td class="b isi">Senin</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b isi">Selasa</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b isi">Rabu</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b isi">Kamis</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b isi">Jumat</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b isi">Sabtu</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b isi">Minggu</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>Siapa yang bekerja minggu ini</h3>
+  <table class="tinggi">
+    <tr><th style="width:52mm">Nama</th><th style="width:30mm">Pekerjaan</th><th style="width:22mm">Jumlah jam</th><th style="width:28mm">Upah (bila ada)</th><th>Tanda tangan</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <div class="note"><b>Aturan pengisian yang kami latih.</b> Tulis apa yang terjadi, bukan apa yang seharusnya terjadi.
+  Bila satu hari tidak ada yang datang, tulis &ldquo;tidak ada kegiatan&rdquo; &mdash; jangan dikosongkan, karena kolom kosong
+  tidak bisa dibedakan dari lupa mencatat. Bila alat rusak, tulis tanggalnya; itulah yang nanti menjelaskan angka yang turun.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 6</span></footer>
+</div>
+
+<!-- ===================== 7 BUKU PANEN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 7</div><h2>Buku panen dan penjualan</h2>
+      <p>Setiap panen ditimbang. Angka yang tidak ditimbang tidak dicatat sebagai hasil.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <h3>Bagian 1 &middot; Panen</h3>
+  <table>
+    <tr><th style="width:20mm">Tanggal</th><th style="width:20mm">Greenhouse</th><th style="width:24mm">Komoditas</th><th style="width:20mm">Berat (kg)</th><th style="width:22mm">Mutu A (kg)</th><th style="width:22mm">Mutu B (kg)</th><th style="width:22mm">Tidak layak (kg)</th><th>Penimbang</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>Bagian 2 &middot; Penjualan</h3>
+  <table>
+    <tr><th style="width:20mm">Tanggal</th><th style="width:38mm">Pembeli</th><th style="width:24mm">Komoditas</th><th style="width:18mm">Berat (kg)</th><th style="width:24mm">Harga per kg (Rp)</th><th style="width:26mm">Jumlah (Rp)</th><th style="width:24mm">Disisihkan untuk kas perawatan (Rp)</th><th>Nomor nota</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="b" colspan="5">Jumlah bulan ini</td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>Bagian 3 &middot; Ringkasan bulan</h3>
+  <table>
+    <tr><th>Bulan</th><th>Total panen (kg)</th><th>Tidak layak jual (kg)</th><th>Total penjualan (Rp)</th><th>Kas perawatan terkumpul (Rp)</th><th>Pemakaian listrik (kWh)</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <div class="note">Angka pada Bagian 3 inilah yang disalin ke papan data bulanan (Lampiran 8) dan dibandingkan dengan
+  kondisi awal (Lampiran 5).</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 7</span></footer>
+</div>
+
+<!-- ===================== 8 PAPAN DATA ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 8</div><h2>Papan data bulanan yang dipasang di lokasi</h2>
+      <p>Satu halaman, dicetak dan ditempel di depan greenhouse setiap awal bulan, supaya siapa pun bisa menilai sendiri.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <table>
+    <tr><th colspan="4" style="font-size:9pt">PAPAN DATA BULAN: ______________  &middot;  Diisi oleh: ______________  &middot;  Tanggal dipasang: ______________</th></tr>
+  </table>
+
+  <h3>Angka bulan ini dibandingkan kondisi awal</h3>
+  <table>
+    <tr><th style="width:56mm">Ukuran</th><th class="c" style="width:30mm">Kondisi awal</th><th class="c" style="width:30mm">Bulan ini</th><th class="c" style="width:26mm">Naik / turun</th><th>Keterangan singkat</th></tr>
+    <tr><td class="b">Panen (kg)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Tanaman gagal (batang)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Jam kerja penyiraman (jam per minggu)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Pemakaian listrik (kWh)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Penjualan (Rp)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Kas perawatan terkumpul (Rp)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="b">Orang yang menerima upah (perempuan / lansia / lainnya)</td><td class="isi"></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>Tiga hal yang kami janjikan akan dibuktikan</h3>
+  <table>
+    <tr><th style="width:8mm">No</th><th>Yang dibuktikan</th><th class="c" style="width:30mm">Status bulan ini</th><th style="width:56mm">Kalau belum, apa sebabnya</th></tr>
+    <tr><td class="c">1</td><td class="isi"></td><td class="c">belum / sedang / terbukti</td><td></td></tr>
+    <tr><td class="c">2</td><td class="isi"></td><td class="c">belum / sedang / terbukti</td><td></td></tr>
+    <tr><td class="c">3</td><td class="isi"></td><td class="c">belum / sedang / terbukti</td><td></td></tr>
+  </table>
+
+  <div class="grid2" style="margin-top:4mm">
+    <div>
+      <h3 style="margin-top:0">Kejadian penting bulan ini</h3>
+      <table>
+        <tr><th style="width:22mm">Tanggal</th><th>Kejadian</th></tr>
+        <tr><td class="isi"></td><td></td></tr>
+        <tr><td class="isi"></td><td></td></tr>
+        <tr><td class="isi"></td><td></td></tr>
+      </table>
+    </div>
+    <div>
+      <h3 style="margin-top:0">Tiga tindakan bulan depan</h3>
+      <table>
+        <tr><th>Tindakan</th><th style="width:26mm">Siapa</th><th style="width:22mm">Kapan</th></tr>
+        <tr><td class="isi"></td><td></td><td></td></tr>
+        <tr><td class="isi"></td><td></td><td></td></tr>
+        <tr><td class="isi"></td><td></td><td></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note"><b>Aturan papan data.</b> Angka ditulis apa adanya, termasuk saat turun. Bila satu baris tidak terisi,
+  tulis &ldquo;tidak diukur&rdquo; &mdash; bukan dikosongkan. Papan yang menunjukkan penurunan dan sebabnya lebih dipercaya warga
+  daripada papan yang selalu naik. Salinan papan ini dikirim kepada pendamping TJSL PLN setiap bulan.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 8</span></footer>
+</div>
+
+<!-- ===================== 9 LAPORAN PEMBUKTIAN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 9</div><h2>Kerangka laporan pembuktian bulan ke-9</h2>
+      <p>Disusun bersama kelompok, disalin ke pemerintah kalurahan dan PLN, dan dirancang agar bisa diperiksa pihak ketiga.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <h3>Halaman 1 &middot; Putusan atas setiap janji</h3>
+  <table>
+    <tr><th style="width:8mm">No</th><th>Yang dijanjikan akan dibuktikan</th><th class="c" style="width:26mm">Angka awal</th><th class="c" style="width:26mm">Hasil</th><th class="c" style="width:34mm">Putusan</th></tr>
+    <tr><td class="c">1</td><td class="isi"></td><td></td><td></td><td class="c">TERBUKTI / BELUM / TIDAK BISA DIUKUR</td></tr>
+    <tr><td class="c">2</td><td class="isi"></td><td></td><td></td><td class="c">TERBUKTI / BELUM / TIDAK BISA DIUKUR</td></tr>
+    <tr><td class="c">3</td><td class="isi"></td><td></td><td></td><td class="c">TERBUKTI / BELUM / TIDAK BISA DIUKUR</td></tr>
+    <tr><td class="c">4</td><td class="isi"></td><td></td><td></td><td class="c">TERBUKTI / BELUM / TIDAK BISA DIUKUR</td></tr>
+  </table>
+
+  <h3>Isi laporan, bagian demi bagian</h3>
+  <table>
+    <tr><th style="width:10mm">Bab</th><th style="width:52mm">Judul</th><th>Isi yang wajib ada</th></tr>
+    <tr><td class="c b">1</td><td class="b">Ringkasan putusan</td><td>Tabel di atas, ditaruh paling depan. Pembaca harus tahu hasilnya sebelum membaca penjelasan.</td></tr>
+    <tr><td class="c b">2</td><td class="b">Kondisi awal</td><td>Salinan Lampiran 5 yang sudah terisi, beserta tanggal pencatatan dan nama pencatat.</td></tr>
+    <tr><td class="c b">3</td><td class="b">Apa yang dikerjakan</td><td>Yang benar-benar dipasang dan dilatih, beserta tanggalnya. Yang direncanakan tetapi tidak jadi dikerjakan juga ditulis, beserta alasannya.</td></tr>
+    <tr><td class="c b">4</td><td class="b">Angka hasil</td><td>Grafik sederhana per bulan untuk panen, tanaman gagal, jam penyiraman, dan pemakaian listrik, dibandingkan garis kondisi awal.</td></tr>
+    <tr><td class="c b">5</td><td class="b">Yang belum terbukti dan mengapa</td><td>Penyebab yang tercatat, bukan dugaan. Disertai saran perbaikan dan perkiraan waktu.</td></tr>
+    <tr><td class="c b">6</td><td class="b">Siapa yang menerima manfaat</td><td>Daftar upah dan daftar hadir yang dirangkum: jumlah orang, berapa perempuan, berapa lansia, berapa buruh tani tanpa lahan.</td></tr>
+    <tr><td class="c b">7</td><td class="b">Cara pengukuran</td><td>Alat apa, siapa yang mengukur, seberapa lengkap datanya, dan bagian mana yang diperkirakan dan bukan diukur.</td></tr>
+    <tr><td class="c b">8</td><td class="b">Keuangan</td><td>Realisasi belanja terhadap RAB, kas perawatan yang terkumpul, dan sisa dana bila ada.</td></tr>
+    <tr><td class="c b">9</td><td class="b">Keberlanjutan</td><td>Nama pengelola dan pengganti, jadwal perawatan, dan rencana 12 bulan berikutnya.</td></tr>
+    <tr><td class="c b">10</td><td class="b">Lampiran data mentah</td><td>Salinan buku harian, buku panen, dan rekaman sensor. Tanpa ini, laporan tidak bisa diperiksa siapa pun.</td></tr>
+  </table>
+
+  <div class="note"><b>Aturan yang kami pegang saat menulis laporan.</b> Satu, tidak ada angka tanpa alat ukur dan tanggal.
+  Dua, bila sesuatu tidak diukur, ditulis &ldquo;tidak diukur&rdquo;, bukan diperkirakan agar terlihat bagus. Tiga, yang gagal
+  ditulis sejelas yang berhasil, karena laporan yang semuanya hijau justru sulit dipercaya dan tidak berguna untuk
+  perbaikan. Empat, laporan dibacakan di musyawarah kelompok sebelum dikirim, supaya isinya diakui oleh orang yang
+  mengerjakannya.</div>
+
+  <div class="ttd">
+    <div>Disusun oleh &middot; Ketua Tim MELEK PANGAN<div class="g">&nbsp;</div></div>
+    <div>Diakui oleh &middot; Ketua Kelompok Tani<div class="g">&nbsp;</div></div>
+  </div>
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 9</span></footer>
+</div>
+
+<!-- ===================== 10 USULAN WARGA ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 10</div><h2>Daftar usulan warga, keputusan, dan alasannya</h2>
+      <p>Dibacakan pada setiap evaluasi bulanan dan ditempel di papan data. Usulan yang ditolak tetap dicatat.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <table>
+    <tr><th style="width:18mm">Tanggal</th><th style="width:28mm">Pengusul</th><th style="width:20mm">Cara menyampaikan</th><th>Usulan atau keluhan</th><th style="width:26mm">Keputusan</th><th style="width:46mm">Alasan keputusan</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <div class="note"><b>Cara mengisi.</b> Kolom <b>cara menyampaikan</b> diisi: musyawarah, grup WhatsApp, buku usulan,
+  survei, atau lisan. Kolom <b>keputusan</b> diisi: dijalankan, dijalankan sebagian, ditunda, atau tidak dijalankan.
+  Kolom <b>alasan</b> wajib diisi untuk semua keputusan, terutama yang tidak dijalankan &mdash; itulah yang membuat warga
+  tetap mau mengusulkan di lain waktu.</div>
+
+  <h3>Rekap untuk laporan</h3>
+  <table>
+    <tr><th>Periode</th><th class="c">Jumlah usulan masuk</th><th class="c">Dijalankan</th><th class="c">Ditunda</th><th class="c">Tidak dijalankan</th><th>Contoh usulan yang mengubah pelaksanaan</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 10</span></footer>
+</div>
+
+<!-- ===================== 11 DAFTAR HADIR ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 11</div><h2>Daftar hadir musyawarah dan pelatihan</h2>
+      <p>Dipakai untuk musyawarah penetapan sasaran, evaluasi bulanan, dan pelatihan pengelola.</p></div>
+    <span class="tandai kosong">FORMULIR KOSONG</span>
+  </div>
+
+  <table>
+    <tr><td class="b" style="width:26mm">Kegiatan</td><td style="width:60mm"></td><td class="b" style="width:22mm">Hari, tanggal</td><td></td></tr>
+    <tr><td class="b">Tempat</td><td></td><td class="b">Pemimpin rapat</td><td></td></tr>
+  </table>
+
+  <table style="margin-top:3mm">
+    <tr><th style="width:8mm">No</th><th style="width:48mm">Nama</th><th class="c" style="width:12mm">L / P</th><th class="c" style="width:14mm">Usia</th><th style="width:34mm">Asal (RT / kelompok)</th><th style="width:34mm">Kelompok rentan (bila ya, sebutkan)</th><th>Tanda tangan</th></tr>
+    <tr><td class="c">1</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">2</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">3</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">4</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">5</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">6</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">7</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">8</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">9</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">10</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">11</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">12</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">13</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">14</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="c">15</td><td class="isi"></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>Catatan singkat hasil pertemuan</h3>
+  <table>
+    <tr><th style="width:38mm">Yang disepakati</th><th style="width:30mm">Siapa yang mengerjakan</th><th style="width:24mm">Kapan selesai</th><th>Catatan</th></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td></tr>
+    <tr><td class="isi"></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <div class="note">Rekap tiga angka yang kami laporkan dari daftar ini: jumlah hadir, berapa di antaranya perempuan,
+  dan berapa dari kelompok rentan. Angka itu dilaporkan apa adanya, termasuk bila rendah.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 11</span></footer>
+</div>
+
+<!-- ===================== 12 KESEPAKATAN PENGELOLA ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 12</div><h2>Kesepakatan pengelola dan kas perawatan</h2>
+      <p>Ditandatangani sebelum pemasangan dimulai, bukan setelah fasilitas jadi.</p></div>
+    <span class="tandai kosong">NASKAH KESEPAKATAN</span>
+  </div>
+
+  <p class="lead">Pada hari ini, ______________ tanggal ______________, bertempat di Dusun Sompok, Kalurahan Sriharjo,
+  Kapanewon Imogiri, Kabupaten Bantul, Kelompok Tani Taruna Tani &ldquo;Hijaunya Cinta&rdquo; bersama Tim MELEK PANGAN
+  menyepakati hal-hal berikut untuk program pengembangan dua greenhouse.</p>
+
+  <h3>Pasal 1 &middot; Pengelola dan penggantinya</h3>
+  <table>
+    <tr><th style="width:52mm">Peran</th><th style="width:48mm">Nama pengelola</th><th style="width:48mm">Nama pengganti</th><th>Tugas pokok</th></tr>
+    <tr><td class="b">Penanggung jawab produksi</td><td class="isi"></td><td></td><td>tanam, rawat, panen</td></tr>
+    <tr><td class="b">Penanggung jawab alat dan listrik</td><td class="isi"></td><td></td><td>pompa, kipas, instalasi, sensor</td></tr>
+    <tr><td class="b">Pencatat</td><td class="isi"></td><td></td><td>buku harian, buku panen, papan data</td></tr>
+    <tr><td class="b">Bendahara kelompok</td><td class="isi"></td><td></td><td>kas penjualan dan kas perawatan</td></tr>
+  </table>
+
+  <h3>Pasal 2 &middot; Kas perawatan</h3>
+  <table>
+    <tr><td class="b" style="width:58mm">Persentase yang disisihkan dari setiap penjualan</td><td class="isi">______ persen</td></tr>
+    <tr><td class="b">Disimpan di</td><td class="isi">rekening atau kotak kas terpisah: ______________________</td></tr>
+    <tr><td class="b">Boleh dipakai untuk</td><td>suku cadang, biaya listrik, dan perbaikan alat. Di luar itu harus lewat musyawarah kelompok.</td></tr>
+    <tr><td class="b">Diperiksa oleh</td><td class="isi">______________________ setiap ______________, dan dilaporkan di papan data.</td></tr>
+  </table>
+
+  <h3>Pasal 3 &middot; Upah dan pembagian hasil</h3>
+  <table>
+    <tr><th style="width:60mm">Pekerjaan</th><th style="width:40mm">Dasar upah</th><th style="width:30mm">Besaran</th><th>Dibayar kapan</th></tr>
+    <tr><td class="b">Penyemaian, sortasi, pengemasan</td><td>per satuan hasil</td><td class="isi"></td><td>hari yang sama</td></tr>
+    <tr><td class="b">Perawatan dan pengamatan harian</td><td>per hari kerja</td><td class="isi"></td><td></td></tr>
+    <tr><td class="b">Pemasangan dan perbaikan</td><td>per hari kerja</td><td class="isi"></td><td></td></tr>
+    <tr><td class="b">Sisa hasil penjualan setelah kas perawatan</td><td>bagi hasil kelompok</td><td class="isi"></td><td></td></tr>
+  </table>
+
+  <h3>Pasal 4 &middot; Hal yang disepakati bersama</h3>
+  <ul class="lead">
+    <li>Fasilitas adalah milik kelompok, bukan milik perseorangan maupun milik tim pelaksana.</li>
+    <li>Pencatatan harian tetap berjalan meskipun pendampingan sudah selesai; bila pencatat berhalangan, penggantinya mengisi.</li>
+    <li>Keputusan yang menyangkut uang, penambahan alat, atau perubahan komoditas diambil dalam musyawarah kelompok.</li>
+    <li>Hasil program dilaporkan apa adanya, termasuk yang belum berhasil.</li>
+    <li>Prioritas pekerjaan berupah diberikan kepada perempuan, warga lanjut usia, dan buruh tani tanpa lahan di Dusun Sompok.</li>
+    <li>Kesepakatan ini dibacakan ulang setiap evaluasi besar dan dapat diubah lewat musyawarah, dengan perubahan dicatat.</li>
+  </ul>
+
+  <div class="ttd">
+    <div>Ketua Kelompok Tani Taruna Tani &ldquo;Hijaunya Cinta&rdquo;<div class="g">&nbsp;</div></div>
+    <div>Ketua Tim MELEK PANGAN<div class="g">&nbsp;</div></div>
+  </div>
+  <div style="text-align:center;margin-top:4mm;font-size:8pt">Mengetahui, Dukuh Sompok / Lurah Sriharjo
+    <div style="margin-top:13mm;border-top:1px solid #10241B;width:70mm;margin-left:auto;margin-right:auto;padding-top:1.5mm;font-weight:700">&nbsp;</div></div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 12</span></footer>
+</div>
+
+<!-- ===================== 13 PERAWATAN + PANDUAN ALAT ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 13</div><h2>Jadwal perawatan alat dan contoh panduan operasi</h2>
+      <p>Panduan ditempel di dekat alatnya, bukan disimpan dalam map.</p></div>
+    <span class="tandai siap">RENCANA TIM</span>
+  </div>
+
+  <h3>Jadwal perawatan</h3>
+  <table>
+    <tr><th style="width:40mm">Alat</th><th style="width:26mm">Setiap minggu</th><th style="width:38mm">Setiap bulan</th><th style="width:38mm">Setiap tiga bulan</th><th>Penanggung jawab</th></tr>
+    <tr><td class="b">Pompa air dan saringan</td><td>bersihkan saringan awal</td><td>periksa kebocoran sambungan dan arus pompa</td><td>periksa impeler dan kabel celup</td><td>PJ alat dan listrik</td></tr>
+    <tr><td class="b">Tandon dan jaringan irigasi</td><td>periksa nozzle tersumbat</td><td>kuras endapan tandon</td><td>periksa kemiringan pipa dan klem</td><td>PJ produksi</td></tr>
+    <tr><td class="b">Kipas exhaust dan sirkulasi</td><td>bersihkan debu dan kasa</td><td>periksa baut dudukan dan bunyi bantalan</td><td>lumasi bantalan bila perlu</td><td>PJ alat dan listrik</td></tr>
+    <tr><td class="b">Instalasi listrik, panel, ELCB</td><td>&mdash;</td><td>uji tombol tes ELCB, periksa sambungan panas</td><td>periksa pembumian dan kekencangan terminal</td><td>PJ alat dan listrik</td></tr>
+    <tr><td class="b">Node sensor dan pencatat data</td><td>lihat data masuk atau tidak</td><td>bersihkan kotak sensor, periksa kabel</td><td>bandingkan dengan termometer pembanding</td><td>Pencatat</td></tr>
+    <tr><td class="b">Timbangan digital</td><td>&mdash;</td><td>periksa dengan beban yang diketahui</td><td>tera ulang dengan anak timbangan</td><td>Pencatat</td></tr>
+    <tr><td class="b">Struktur greenhouse</td><td>periksa robekan plastik</td><td>periksa rangka dan pintu</td><td>periksa saluran air keliling</td><td>PJ produksi</td></tr>
+  </table>
+
+  <h3>Contoh panduan operasi satu halaman &mdash; Pompa irigasi</h3>
+  <table>
+    <tr><th colspan="2" style="font-size:9pt">POMPA IRIGASI &middot; 500 W &middot; dipasang di tepi sungai, menyalurkan air ke tandon 1.200 L</th></tr>
+    <tr><td class="b" style="width:42mm">Sebelum menyalakan</td><td>1) Pastikan saringan awal tidak tersumbat. 2) Pastikan tandon belum penuh. 3) Pastikan tangan dan kaki kering, dan tidak berdiri di genangan.</td></tr>
+    <tr><td class="b">Menyalakan</td><td>Tekan tombol pada panel, bukan mencabut-pasang steker. Dengarkan bunyi pompa: bila mendengung tanpa air mengalir, matikan dalam 10 detik.</td></tr>
+    <tr><td class="b">Selama menyala</td><td>Jangan tinggalkan lebih dari 30 menit tanpa dilihat. Catat jam mulai dan jam selesai di buku harian.</td></tr>
+    <tr><td class="b">Mematikan</td><td>Matikan lewat panel. Bila air di tandon sudah penuh, matikan meskipun jadwal belum habis.</td></tr>
+    <tr><td class="b">Tanda ada masalah</td><td>Pompa panas berlebihan, bunyi kasar, air keruh berpasir, atau ELCB turun berulang. Semua ini dicatat tanggalnya.</td></tr>
+    <tr><td class="b">Bila ELCB turun</td><td>Jangan langsung dinaikkan berulang kali. Matikan pompa, keringkan sambungan, lalu hubungi penanggung jawab alat dan listrik.</td></tr>
+    <tr><td class="b">Dilarang</td><td>Menyambung kabel tambahan tanpa izin pengelola; menutup lubang udara pompa; menyalakan saat sungai banjir.</td></tr>
+    <tr><td class="b">Suku cadang</td><td>Saringan, seal, dan kapasitor tersedia di toko di Bantul dan Yogyakarta. Dibeli memakai kas perawatan.</td></tr>
+    <tr><td class="b">Hubungi</td><td>PJ alat dan listrik: ______________ &middot; Koordinator teknologi: ______________</td></tr>
+  </table>
+
+  <div class="note">Panduan seperti ini dibuat satu halaman untuk setiap alat &mdash; pompa, kipas, panel listrik, node sensor,
+  dan timbangan &mdash; dengan gambar, lalu dicetak, dilaminasi, dan ditempel di dekat alatnya. Bahasanya sehari-hari,
+  bukan bahasa buku manual.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 13</span></footer>
+</div>
+
+<!-- ===================== 14 RENCANA PENGEMBANGAN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 14</div><h2>Rencana pengembangan satu dan tiga tahun</h2>
+      <p>Target ditulis sebagai target. Angka hasil baru ditulis setelah diukur.</p></div>
+    <span class="tandai siap">RENCANA TIM</span>
+  </div>
+
+  <h3>Tahun pertama</h3>
+  <table>
+    <tr><th style="width:56mm">Yang harus selesai</th><th style="width:34mm">Kapan</th><th style="width:44mm">Cara memeriksa</th><th>Penanggung jawab</th></tr>
+    <tr><td class="b">Dua greenhouse beroperasi dengan listrik, air, dan catatan harian</td><td>bulan ke-5</td><td>buku harian terisi minimal 90 persen hari</td><td>Pencatat</td></tr>
+    <tr><td class="b">Laporan pembuktian pertama terbit dan bisa diperiksa pihak ketiga</td><td>bulan ke-9</td><td>laporan lengkap dengan data mentah terlampir</td><td>Ketua tim</td></tr>
+    <tr><td class="b">Delapan orang mandiri: empat pengelola dan empat pengganti</td><td>bulan ke-6</td><td>uji praktik: memasang ulang sensor dan membaca datanya</td><td>Koord. pelatihan</td></tr>
+    <tr><td class="b">Kas perawatan berjalan</td><td>bulan ke-6</td><td>buku kas terpisah dan saldo terlihat di papan data</td><td>Bendahara kelompok</td></tr>
+    <tr><td class="b">Satu kelompok tani dusun tetangga dilatih memakai panduan kami</td><td>bulan ke-9 sampai 12</td><td>daftar hadir pelatihan dan panduan yang diserahkan</td><td>Koordinator lapangan</td></tr>
+    <tr><td class="b">Program masuk usulan rencana pembangunan kalurahan</td><td>tahun pertama</td><td>dokumen usulan yang diterima kalurahan</td><td>Ketua kelompok</td></tr>
+  </table>
+
+  <h3>Tahun kedua dan ketiga</h3>
+  <table>
+    <tr><th style="width:56mm">Arah pengembangan</th><th style="width:44mm">Ukuran yang dikejar</th><th>Yang dibutuhkan</th></tr>
+    <tr><td class="b">Menambah greenhouse di Kalurahan Sriharjo</td><td>jumlah unit yang beroperasi dan tercatat, bukan jumlah yang dibangun</td><td>dana, lahan kelompok, penambahan daya, pelatihan</td></tr>
+    <tr><td class="b">Komoditas bernilai lebih tinggi, terutama melon</td><td>pendapatan per siklus per greenhouse</td><td>benih, pendampingan budidaya, pembeli tetap</td></tr>
+    <tr><td class="b">Ruang sortasi dan pengemasan bertenaga listrik</td><td>persentase hasil yang terjual tersortir</td><td>bangunan sederhana, meja, sealer, tambah daya</td></tr>
+    <tr><td class="b">Kelompok menjadi unit layanan pemasangan dan perawatan bagi kelompok lain</td><td>jumlah lokasi yang dipasang dan masih berjalan setelah 12 bulan</td><td>pelatihan bersertifikat, peralatan kerja, modal awal</td></tr>
+    <tr><td class="b">Replikasi di Kapanewon Imogiri</td><td>sasaran lima lokasi</td><td>mitra kalurahan, dukungan PLN, panduan dan modul</td></tr>
+  </table>
+
+  <h3>Dukungan yang diharapkan dari PLN</h3>
+  <table>
+    <tr><th style="width:46mm">Bentuk dukungan</th><th>Manfaat bagi program</th><th style="width:60mm">Manfaat bagi PLN</th></tr>
+    <tr><td class="b">Pendanaan implementasi</td><td>fasilitas terpasang dan terukur sejak awal</td><td>program TJSL dengan bukti yang bisa diperiksa</td></tr>
+    <tr><td class="b">Penambahan daya dan pemeriksaan instalasi</td><td>pompa dan kipas bisa bekerja aman</td><td>pelanggan produktif baru, sambungan darurat berkurang</td></tr>
+    <tr><td class="b">Pelatihan teknis bersertifikat</td><td>pemuda desa bisa memasang dan merawat sendiri</td><td>mitra lokal yang paham keselamatan kelistrikan</td></tr>
+    <tr><td class="b">Pendampingan pemasaran dan publikasi</td><td>hasil panen terserap, program dikenal</td><td>cerita program yang terdokumentasi dan bisa dibagikan</td></tr>
+  </table>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 14</span></footer>
+</div>
+
+<!-- ===================== 15 SURAT KESEDIAAN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 15a</div><h2>Contoh surat kesediaan kelompok tani</h2>
+      <p>Diketik ulang di atas kertas kelompok, ditandatangani, lalu dipindai.</p></div>
+    <span class="tandai kosong">UNTUK DITANDATANGANI</span>
+  </div>
+
+  <div style="border:1px solid #C9DBD1;padding:8mm 9mm;font-size:9pt;line-height:1.6">
+    <div style="text-align:center;font-weight:800;font-size:11pt;color:#0F3D2E">SURAT PERNYATAAN KESEDIAAN</div>
+    <div style="text-align:center;font-size:8.4pt;margin-top:1mm">Nomor: ____________________</div>
+
+    <p style="margin-top:5mm">Yang bertanda tangan di bawah ini:</p>
+    <table style="margin-top:2mm;border:0">
+      <tr><td style="border:0;width:38mm">Nama</td><td style="border:0">: ______________________________________</td></tr>
+      <tr><td style="border:0">Jabatan</td><td style="border:0">: Ketua Kelompok Tani Taruna Tani &ldquo;Hijaunya Cinta&rdquo;</td></tr>
+      <tr><td style="border:0">Alamat</td><td style="border:0">: Dusun Sompok, Kalurahan Sriharjo, Kapanewon Imogiri, Kabupaten Bantul, DIY</td></tr>
+      <tr><td style="border:0">Jumlah anggota</td><td style="border:0">: 28 orang</td></tr>
+    </table>
+
+    <p style="margin-top:4mm">dengan ini menyatakan bahwa kelompok kami:</p>
+    <ol style="margin-left:6mm;margin-top:2mm">
+      <li>Bersedia menjadi pelaksana dan pengelola program <b>MELEK PANGAN</b> pada dua greenhouse milik kelompok,
+        berukuran 6 &times; 15 meter dan 8 &times; 12 meter, yang diajukan pada PLN SustainAction 2026.</li>
+      <li>Bersedia mencatat kondisi awal selama empat minggu sebelum pemasangan alat dimulai, dan meneruskan pencatatan
+        harian setelah program selesai.</li>
+      <li>Bersedia menunjuk empat pengelola tetap beserta empat penggantinya, dan menyisihkan sebagian hasil penjualan
+        sebagai kas perawatan.</li>
+      <li>Bersedia melibatkan ibu-ibu, warga lanjut usia, dan buruh tani tanpa lahan di Dusun Sompok dalam pekerjaan
+        berupah dan dalam musyawarah.</li>
+      <li>Bersedia menerima kunjungan pemantauan dan pemeriksaan dari PLN maupun pihak yang ditunjuk, serta
+        menyampaikan hasil program apa adanya.</li>
+    </ol>
+
+    <p style="margin-top:4mm">Demikian surat pernyataan ini dibuat dengan sebenarnya, tanpa paksaan dari pihak mana pun,
+    untuk dipergunakan sebagaimana mestinya.</p>
+
+    <div style="margin-top:7mm;text-align:right">Sriharjo, ____________________ 2026</div>
+    <div class="ttd" style="margin-top:3mm">
+      <div>Mengetahui, Dukuh Sompok<div class="g">&nbsp;</div></div>
+      <div>Ketua Kelompok Tani<div class="g">&nbsp;</div></div>
+    </div>
+  </div>
+
+  <div class="note"><b>Catatan.</b> Surat ini menyebut kesediaan, bukan janji hasil. Kalimat seperti &ldquo;menjamin
+  pendapatan naik sekian persen&rdquo; sengaja tidak dipakai, karena angka itu baru ada setelah diukur.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Halaman 15</span></footer>
+</div>
+
+<!-- ===================== 15b SURAT DUKUNGAN ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 15b</div><h2>Contoh surat dukungan pemerintah kalurahan</h2>
+      <p>Diketik ulang di atas kop Kalurahan Sriharjo, ditandatangani dan distempel, lalu dipindai.</p></div>
+    <span class="tandai kosong">UNTUK DITANDATANGANI</span>
+  </div>
+
+  <div style="border:1px solid #C9DBD1;padding:8mm 9mm;font-size:9pt;line-height:1.6">
+    <div style="text-align:center;font-weight:800;font-size:11pt;color:#0F3D2E">SURAT DUKUNGAN</div>
+    <div style="text-align:center;font-size:8.4pt;margin-top:1mm">Nomor: ____________________</div>
+
+    <p style="margin-top:5mm">Yang bertanda tangan di bawah ini:</p>
+    <table style="margin-top:2mm;border:0">
+      <tr><td style="border:0;width:38mm">Nama</td><td style="border:0">: ______________________________________</td></tr>
+      <tr><td style="border:0">Jabatan</td><td style="border:0">: Lurah Sriharjo / Dukuh Sompok</td></tr>
+      <tr><td style="border:0">Alamat</td><td style="border:0">: Kalurahan Sriharjo, Kapanewon Imogiri, Kabupaten Bantul, DIY</td></tr>
+    </table>
+
+    <p style="margin-top:4mm">menyatakan mendukung pelaksanaan program <b>MELEK PANGAN</b> oleh Kelompok Tani Taruna Tani
+    &ldquo;Hijaunya Cinta&rdquo; bersama Tim MELEK PANGAN di Dusun Sompok, dengan dukungan berupa:</p>
+    <ol style="margin-left:6mm;margin-top:2mm">
+      <li>Izin pelaksanaan kegiatan di wilayah Dusun Sompok, termasuk pemanfaatan sumber air dan akses jalan menuju lokasi.</li>
+      <li>Penyediaan tempat dan pemberitahuan warga untuk musyawarah penetapan sasaran serta evaluasi bulanan yang terbuka.</li>
+      <li>Bantuan pendataan warga yang perlu dilibatkan, termasuk perempuan, warga lanjut usia, penyandang disabilitas,
+        dan buruh tani tanpa lahan, bersama kader kesehatan.</li>
+      <li>Kesediaan menerima salinan dokumen kondisi awal, papan data bulanan, dan laporan pembuktian program sebagai
+        arsip kalurahan.</li>
+      <li>Kesediaan mempertimbangkan program ini masuk dalam usulan rencana pembangunan kalurahan pada tahun berikutnya.</li>
+    </ol>
+
+    <p style="margin-top:4mm">Demikian surat dukungan ini dibuat untuk dipergunakan sebagaimana mestinya.</p>
+
+    <div style="margin-top:7mm;text-align:right">Sriharjo, ____________________ 2026</div>
+    <div style="margin-top:3mm;text-align:right">
+      <div style="display:inline-block;text-align:center;min-width:70mm">
+        Lurah Sriharjo
+        <div style="margin-top:16mm;border-top:1px solid #10241B;padding-top:1.5mm;font-weight:700">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note"><b>Cara memakai kedua naskah ini.</b> Bila sampai batas waktu pendaftaran surat asli belum
+  ditandatangani, naskah ini tetap dilampirkan sebagai bukti kesiapan, dan surat bertanda tangan menyusul sebelum
+  tahap <i>feasibility checking</i> pada 17 Oktober sampai 5 November 2026. Kami memilih menyatakan statusnya apa
+  adanya daripada mengirim dokumen yang belum benar-benar disetujui.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN &middot; PLN SustainAction 2026</span><span>Halaman 16</span></footer>
+</div>
+
+</body></html>
