@@ -12,7 +12,15 @@
 
   @media screen {
     body { background: #E9EFEB; padding: 18px 0 40px; }
-    .page { margin: 0 auto 18px; background: #fff; box-shadow: 0 8px 28px rgba(15,61,46,.14); }
+  
+  .fotos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; }
+  .fotos figure { border: 1px solid #C9DBD1; border-radius: 3mm; overflow: hidden; background: #fff; margin: 0; }
+  .fotos img { width: 100%; height: 52mm; object-fit: cover; display: block; background: #EEF3F0; }
+  .fotos figcaption { padding: 2.6mm 3mm 3.4mm; }
+  .fotos b { display: block; font-size: 8.6pt; font-weight: 800; color: #0F3D2E; }
+  .fotos span { display: block; font-size: 7.8pt; font-weight: 600; color: #34483E; margin-top: 1mm; line-height: 1.35; }
+  @media screen and (max-width: 980px) { .fotos img { height: 62mm; } }
+  .page { margin: 0 auto 18px; background: #fff; box-shadow: 0 8px 28px rgba(15,61,46,.14); }
     .bar { position: sticky; top: 0; z-index: 9; background: #0F3D2E; color: #fff; padding: 14px 20px; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; justify-content: space-between; margin-bottom: 18px; }
     .bar b { font-size: 1rem; font-weight: 800; }
     .bar span { font-size: .82rem; color: #BFE3CE; font-weight: 600; }
@@ -111,6 +119,37 @@
   </div>
 
   <footer><span>Lampiran Bukti &middot; MELEK PANGAN &middot; PLN SustainAction 2026</span><span>Halaman 1</span></footer>
+</div>
+
+
+<!-- ===================== DOKUMENTASI FOTO ===================== -->
+<div class="page">
+  <div class="kop">
+    <div><div class="no">LAMPIRAN 1b</div><h2>Dokumentasi lokasi</h2>
+      <p>Foto asli greenhouse hidroponik Kelompok Tani Taruna Tani &ldquo;Hijaunya Cinta&rdquo;, Dusun Sompok, Kalurahan Sriharjo.</p></div>
+    <span class="tandai siap">FOTO LOKASI</span>
+  </div>
+
+  <div class="fotos">
+    <figure><img src="foto/dalam-greenhouse.jpg" alt="Bagian dalam greenhouse dengan jalur hidroponik yang sudah ditanami">
+      <figcaption><b>Bagian dalam greenhouse</b><span>Jalur hidroponik yang sudah ditanami sayuran daun, dengan kipas terpasang di dinding ujung.</span></figcaption></figure>
+    <figure><img src="foto/jalur-produksi.jpg" alt="Jalur produksi memanjang, sebagian terisi sebagian kosong">
+      <figcaption><b>Jalur produksi tampak memanjang</b><span>Sebagian jalur sudah terisi, sebagian masih kosong; kondisi inilah yang dicatat pada empat minggu pertama.</span></figcaption></figure>
+    <figure><img src="foto/kegiatan-bersama.jpg" alt="Anggota kelompok dan pendamping di dalam greenhouse">
+      <figcaption><b>Kegiatan bersama di dalam greenhouse</b><span>Anggota kelompok dan pendamping meninjau jalur produksi.</span></figcaption></figure>
+    <figure><img src="foto/kendali-nutrisi.jpg" alt="Perangkat kendali nutrisi otomatis yang terpasang di lokasi">
+      <figcaption><b>Kendali nutrisi yang sudah terpasang</b><span>Perangkat kendali pemberian nutrisi otomatis di lokasi; datanya belum bisa dibaca dari jarak jauh.</span></figcaption></figure>
+    <figure><img src="foto/larutan-nutrisi.jpg" alt="Pekerjaan pencampuran dan pemeriksaan larutan nutrisi">
+      <figcaption><b>Pengaturan larutan nutrisi</b><span>Pencampuran dan pemeriksaan yang saat ini masih dikerjakan langsung di lokasi.</span></figcaption></figure>
+    <figure><img src="foto/tampak-luar.jpg" alt="Tampak luar greenhouse dengan kolam dan lahan pertanian di sekitarnya">
+      <figcaption><b>Tampak luar dan lingkungan sekitar</b><span>Greenhouse berada di lereng dengan kolam dan lahan pertanian di sekelilingnya.</span></figcaption></figure>
+  </div>
+
+  <div class="note"><b>Keterangan ditulis hanya berdasarkan apa yang terlihat pada foto.</b> Lokasi ini pernah menerima
+  program PLN Peduli 2024, sehingga kipas dan kendali pemberian nutrisi otomatis sudah terpasang sebelum program ini
+  diajukan. Foto dokumentasi tambahan tersedia dan dapat diperiksa saat peninjauan lapangan.</div>
+
+  <footer><span>Lampiran Bukti &middot; MELEK PANGAN</span><span>Dokumentasi lokasi</span></footer>
 </div>
 
 <!-- ===================== 2 JADWAL ===================== -->
