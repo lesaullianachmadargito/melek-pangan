@@ -1,8 +1,8 @@
 # MELEK PANGAN
 
-Lampiran bukti dan perangkat kerja program **MELEK PANGAN — Greenhouse Pemuda yang Dialiri Listrik dan Diukur Hasilnya**, diajukan pada **PLN SustainAction 2026** (kategori Sustainable Village).
+Lampiran bukti dan perangkat kerja program **MELEK PANGAN — Greenhouse Hidroponik yang Terpantau dan Terbukti Hasilnya**, diajukan pada **PLN SustainAction 2026** (kategori Sustainable Village).
 
-Lokasi: Dusun Sompok, Kalurahan Sriharjo, Kapanewon Imogiri, Kabupaten Bantul, DIY.
+Lokasi: greenhouse hidroponik 6 x 12 m (72 m²), Dusun Sompok, Kalurahan Sriharjo, Kapanewon Imogiri, Kabupaten Bantul, DIY. Lokasi ini pernah menerima program PLN Peduli 2024.
 Pelaksana: Kelompok Tani Taruna Tani "Hijaunya Cinta" (28 anggota) bersama Tim MELEK PANGAN.
 
 **Halaman lampiran:** https://lesaullianachmadargito.github.io/melek-pangan/
@@ -13,7 +13,8 @@ Pelaksana: Kelompok Tani Taruna Tani "Hijaunya Cinta" (28 anggota) bersama Tim M
 |---|---|
 | `index.html` | Lampiran 16 halaman, bisa dibaca langsung di peramban |
 | `Lampiran-Bukti-MELEK-PANGAN.pdf` | Versi cetak lampiran |
-| `Proposal-dan-Lampiran-MELEK-PANGAN.pdf` | Proposal 15 halaman digabung dengan lampiran |
+| `Proposal-dan-Lampiran-MELEK-PANGAN.pdf` | Proposal digabung dengan lampiran (versi publik; halaman dokumentasi foto tidak disertakan) |
+| `RAB-MELEK-PANGAN.xlsx` | Rencana Anggaran Biaya |
 | `Struktur-Organisasi-MELEK-PANGAN.pdf` | Struktur organisasi satu halaman |
 
 ## Cara membaca
